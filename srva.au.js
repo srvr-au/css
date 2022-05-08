@@ -52,3 +52,7 @@ z.type = 'password';
 x.innerHTML = 'show';
 }
 }
+
+function refreshImg(imgElement, imgURL){
+getid(imgElement).src = imgURL + "?t=" + new Date().getTime();
+}
