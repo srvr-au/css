@@ -8,9 +8,9 @@ label,legend{display: block;font-weight: bold;padding:0px;margin-bottom:0.5rem;}
 input:required,textarea:required,select:required,input:invalid,textarea:invalid,select:invalid{background-color:hsl(0, 100%, 97%);}
 input:optional,textarea:optional,select:optional,input:valid,textarea:valid,select:valid{background-color:hsl(120, 100%, 97%);}
 
-.button, button, input[type='button'], input[type='reset'], input[type='submit'] {padding:3px 15px;vertical-align: middle;text-align: center;border-radius:10px;text-decoration:none;font-weight:bold;color:black;cursor:pointer;box-shadow:3px 3px 6px var(--T85);white-space:nowrap;display:inline-block;border:1px solid black;outline:0;background-color:var(--T25);}
+.button, button, input[type='button'], input[type='reset'], input[type='submit'] {padding:3px 15px;vertical-align: middle;text-align: center;border-radius:10px;text-decoration:none;font-weight:bold;color:black;cursor:pointer;box-shadow:3px 3px 6px var(--T25);white-space:nowrap;display:inline-block;border:1px solid black;outline:0;background-color:var(--T85);}
 
-.button:focus, button:focus, input[type='button']:focus, input[type='reset']:focus, input[type='submit']:focus {box-shadow:3px 3px 6px var(--T85) inset;background-color:var(--T60); }
+.button:focus, button:focus, input[type='button']:focus, input[type='reset']:focus, input[type='submit']:focus {box-shadow:3px 3px 6px var(--T25) inset;background-color:var(--T60); }
 
 
 input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]):not([type="reset"]):not([type="button"]), textarea, select {
@@ -54,6 +54,6 @@ textarea {height:6rem;overflow:auto;resize:vertical;}
 .captchaTxt{max-width:100px;margin-right:10px;}
 .captchaImg{object-fit: contain;}
 
-.btn-dn{box-shadow:3px 3px 6px var(--T85) inset;outline:0;background-color:var(--T60);}
+.btn-dn{box-shadow:3px 3px 6px var(--T25) inset;outline:0;background-color:var(--T60);}
 .btn-up::before{content:'\002B';}
 .btn-dn::before{content: "\2212";}
