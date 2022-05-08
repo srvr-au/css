@@ -55,5 +55,3 @@ textarea {height:6rem;overflow:auto;resize:vertical;}
 .captchaImg{object-fit: contain;}
 
 .btn-dn{box-shadow:3px 3px 6px var(--T25) inset;outline:0;background-color:var(--T60);}
-.btn-up::before{content:'\002B';}
-.btn-dn::before{content: "\2212";}
