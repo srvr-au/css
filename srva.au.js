@@ -54,5 +54,5 @@ x.innerHTML = 'show';
 }
 
 function refreshImg(imgElement, imgURL){
-getid(imgElement).src = imgURL + "?t=" + new Date().getTime();
+  imgURL.includes("?") ? getid(imgElement).src = imgURL + "&t=" + new Date().getTime() : getid(imgElement).src = imgURL + "?t=" + new Date().getTime();
 }
