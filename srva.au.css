@@ -333,6 +333,7 @@ body{margin:0;padding-bottom:20px;}
 :root{--res-cnr:10px;}
 body{margin:10px 0;background-color:var(--T95);background-image:linear-gradient(var(--T95), var(--T25));background-attachment:fixed;}
 #srvaBox{width:800px;margin:auto;border:2px solid #ffffff;border-radius:15px;background-color:var(--T97);padding-bottom:20px;box-shadow:3px 3px 7px var(--T25);}
+.imgHeader{border-radius:15px 15px 0 0;}
 #brandmenu{position:static;width:100%;border-radius:15px 15px 0 0;}
 #brand{height:80px;font-size:70px;line-height:90px;border-radius:15px 15px 0 0;background-image:linear-gradient(var(--T25), var(--T90));}
 #menubar{order:2;}
