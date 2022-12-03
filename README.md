@@ -1,4 +1,4 @@
-# css-framework.srva.au
+# css-framework.srvr.au
 It's a css framework, with a little necessary JavaScript.
 
 It's mobile first and gracefully degrades for wide screen viewing. It's material design so it holds reader interest.
