@@ -8,8 +8,8 @@
 :root{--Hue:105;--Sat:55%;}
 </style>
 
-<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/srva-au/css@main/srva.au.css" media="screen, projection">
-<script src="https://cdn.jsdelivr.net/gh/srva-au/css@main/srva.au.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/srvr-au/css@main/srvr.au.css" media="screen, projection">
+<script src="https://cdn.jsdelivr.net/gh/srvr-au/css@main/srvr.au.js"></script>
 
 </head><body>
 <div id="srvaBox">

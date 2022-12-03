@@ -1,0 +1,491 @@
+<!doctype html><html lang="en-au"><head><meta charset="utf-8"><meta name="robots" content="index,nofollow,noarchive">
+<title>srvr.au.css - Simple mobile first CSS Framework for quick website creation.</title>
+<meta name="description" content="">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<style>
+/* Theme - just enter the Hue and Saturation of a base color. */
+:root{--Hue:220;--Sat:69%;}
+</style>
+
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/srvr-au/css@main/srvr.au.css?v=0.1" media="screen, projection">
+<script src="https://cdn.jsdelivr.net/gh/srvr-au/css@main/srvr.au.js"></script>
+
+</head><body>
+<div id="acornBox">
+
+<div id="brandmenu">
+  <div id="brand" class="nowrap"><span class="nowrap">srvr.au.CSS</span></div>
+<div id="menubar"><a href="tel:11111111" class="button">Call</a><a href="http://formmail.srvr.au" target="_blank" class="button">Email</a><a href="sms://11111111" class="button">SMS</a></div>
+</div>
+
+
+
+<div id="open-menu" class="overlay">
+<div class="modal card">
+<header class="cardHeader padLR font-14 flex-center-v">Menu</header>
+<div class="cardBody padLR">
+<nav>
+<ol>
+<li><a href="http://can.com">Link</a></li>
+<li><a>Link</a></li>
+<li><b class="font-12">Heading</b>
+<ol>
+<li><a>Link</a></li>
+<li><a>Link</a></li>
+<li><b class="font-12">Heading</b>
+<ol>
+<li><a>Link</a></li>
+</ol></li>
+</ol></li>
+<li><a>Link</a></li>
+</ol>
+</nav>
+</div>
+<div class="cardFooter flex-center-all"><a href="#!" title="Close" class="button bgcolGray1">Close</a></div>
+    </div>
+</div>
+
+
+<div class="padLR">
+<h1>What is srva.au.CSS?</h1>
+
+<p>Version: 0.1</p>
+<p>Status: Production ready. I am currently using it on a live site.</p>
+<p>To Do: A whole lot of organisation and tidying needed. Some updating needed.</p>
+<p>Credits: This work is a compilation of others work and some original work over many years. I would like to credit others work, but I dont know who created what...</p>
+<p>CSS and JS are inserted into this html page, mainly because i am developing on Android. Also so that the CSS and JS files are not remotely called from here. You can move them to separate files on your webspace if you want.</p>
+
+<ul><h2>Features</h2>
+<li><strong>Designed Mobile First - </strong>Mobile First Design means that you won't find any "hover" CSS in this framework. Touch screens don't use hover. Mobile First means designing for portrait mode with fallback for landscape orientation. If in landscape mode the screen width is less than 805px then AcornCSS assumes you are using a simple mobile or watch and keeps the design in Portrait mode.
+</li>
+
+<li><strong>Small - </strong>AcornCSS does not change browser default unless necessary. AcornCSS only includes frequently needed functions.</li>
+
+<li><strong>Easy to Remember - </strong>We use Structural Naming Conventions. All classnames describe what the class is <strong>FOR</strong>. For instance the classname "clearFloat" clears a float, the classname "width-50" makes an object 50% of its parent (generally the viewport). This way classnames become very easy to remember. We use camelCase where classnames are all letters and a hypen to separate numbers. This benefits ease of reading without lengthening the classname and increasing the size of the CSS file.</li>
+
+<li><strong>Themed - </strong>We use one colour for theming - and 3 lighter shades and 3 darker shades of that colour. Since our themes are basically one colour - you never have colours clashing. At the end of the day simpler is better. You just have to enter the Hue and Saturation of your favourite color. Check your favourite search engine for "hsl color conversion".
+</ul>
+<div class="card padLR txtCenter bgcol-alert"><p><strong>This page demonstrates AcornCSS, as it is designed Mobile First - you should be viewing it in a mobile.</strong></p></div>
+
+<div class="spacerV-10"></div>
+
+<h2>AcornCSS Typography</h2>
+<p>Default font size is 100% - in other words whatever is the default in the current browser. Most other frameworks use pixels and on mobile it's too small and on desktop too big. 100% is the perfect size to read - turn your mobile to portrait and see the text become smaller, then bigger when you turn back to portrait.</p>
+<p>All font sizes are based on rem, not pixels not em. this means they scale properly. Classname "font-12" is 20% bigger (1.2rem) or 120% of default browser font size.</p>
+<p>Most other frameworks build on what has gone before and include all sorts of obsolete junk (like using pixels for font size). We have designed AcornCSS from the start for mobile devices.</p>
+
+<h3>Text Shadows</h3>
+<p>
+<span class="txtShadow font-14"><b>I love black shadows. </b></span>
+<span class="txtShadowD3 font-14"><b>I love D3 shadows. </b></span>
+<span class="txtShadowBlackGlow font-14"><b>I love glowing black text. </b></span>
+<span class="txtShadowWhiteGlow font-14"><b>I love glowing white text. </b></span>
+</p>
+
+<div class="spacerV-5"></div>
+
+<h3>Headings</h3>
+<h1>h1 Heading</h1>
+<h2>h2 Heading</h2>
+<h3>h3 Heading</h3>
+<h4>h4 Heading</h4>
+<h5>h5 Heading</h5>
+<h6>h6 Heading</h6>
+
+<div class="spacerV-20"></div>
+
+<p class="txtHero">Hero Text is a big centered bunch of text.</p>
+
+<div class="spacerV-20"></div>
+
+<h2>AcornCSS Images</h2>
+<p>A website is mostly made up of images and text. Therefore these are our primary focus. Text is put into a text box that simply gives padding on the left and right (padLR). Images can also be put into this div to give padding or made fullscreen.</p>
+</div>
+
+<h3 class="padLR">Full width image</h3>
+<img src="sunset.jpg" alt="sunset image">
+
+<div class="padLR">
+
+<h5>Image in cards</h5>
+<div class="card bgcolWhite"><img src="sunset.jpg" alt="sunset image" class="rndcnrT">
+<p class="txtCenter">Explanation of photo at bottom</p>
+</div>
+<div class="card bgcolWhite">
+<p class="txtCenter">Explanation of photo at top</p>
+<img src="sunset.jpg" alt="sunset image" class="rndcnrB">
+</div>
+<h5>A card 60% width and centered</h5>
+<img src="sunset.jpg" alt="sunset image" class="card width-60 centerBox">
+
+
+<div class="card bgcolWhite">
+<h3 class="padLR">A card with header, full width image and text</h3>
+<img src="sunset.jpg" alt="sunset image">
+<div class="padLR">
+<p class="txtCenter">centered text to explain the nice sunset</p>
+<p>text text and more text</p>
+<p>text text and more text</p>
+<p>text text and more text</p>
+</div>
+</div>
+
+<h2>Scattered Polaroid Images</h2>
+<p>Something a little different to do with images.</p>
+<div class="spacerV-10"></div>
+<div class="polaroid rotate-r centerBox">
+  <img src="https://picsum.photos/284/213?random=1" alt="Random image" width="284" height="213">
+  <p>A random image</p>
+</div>
+
+<div class="polaroid rotate-l centerBox">
+  <img src="https://picsum.photos/284/213?random=2" alt="Random image" width="284" height="213">
+  <p>Another random image.</p>
+</div>
+<div class="spacerV-20"></div>
+
+<h3>ScrollBox Example</h3>
+<p>Used where horizontal items need a bit of room and you dont want them cascading down.</p>
+<div class="scrollBox bgcol-L3">
+<div class="spacerH-20"></div>
+<div class="polaroid rotate-l scrollItem">
+  <img src="https://picsum.photos/140/100?random=3" alt="Random image">
+  <p>Another random<br>image.</p>
+</div>
+<div class="spacerH-20"></div>
+<div class="polaroid rotate-r scrollItem">
+  <img src="https://picsum.photos/140/100?random=4" alt="Random image">
+  <p>Another random<br>image.</p>
+</div>
+<div class="spacerH-20"></div>
+<div class="polaroid rotate-l scrollItem">
+  <img src="https://picsum.photos/140/100?random=5" alt="Random image">
+</div>
+<div class="spacerH-20"></div>
+<div class="polaroid rotate-l scrollItem">
+  <img src="https://picsum.photos/140/100?random=6" alt="Random image">
+</div>
+<div class="spacerH-20"></div>
+<div class="polaroid rotate-r scrollItem">
+  <img src="https://picsum.photos/140/100?random=7" alt="Random image">
+</div>
+<div class="spacerH-20"></div>
+
+</div>
+<div class="spacerV-20"></div>
+
+</div>
+
+<h5 class="padLR">Image floated left and right with odd/even background colours.</h5>
+<div class="odd">
+<div class="floatBox pad-4">
+<img class="floatRight" src="judy.jpg" alt="judy">
+<h4>Judy</h4>
+<p>Tiny picture for movie floated right with text wrapped.</p>
+</div>
+<div class="floatBox pad-4">
+<img class="floatlLeft" src="knivesout.jpg" alt="knives out">
+<h4>Knives Out</h4>
+<p>Tiny picture for movie floated left with text wrapped and alternate colours.</p>
+</div>
+<div class="floatBox pad-4 odd">
+<img class="floatRight" src="littlewomen.jpg" alt="little women">
+<h4>Little Women</h4>
+<p>Tiny picture for a movie floated right with text wrapped and paragraphed.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Imperdiet dui accumsan sit amet nulla facilisi. Imperdiet dui accumsan sit amet nulla facilisi morbi tempus iaculis.</p>
+</div>
+</div>
+
+<div class="padLR"><h2>A Slideshow</h2>
+<p>It seems every website has one of these - I think they suck, but, here's one anyway. Each image or div shows for 5 seconds. Available for 3 to 9 images or divs.</p>
+</div>
+
+<div class="ssbox">
+<img class="ssani-3" src="https://picsum.photos/1200/300?random=1" alt="">
+<img class="ssani-3 sschild-2" src="https://picsum.photos/1200/300?random=2" alt="">
+<img class="ssani-3 sschild-3" src="https://picsum.photos/1200/300?random=3" alt="">
+</div>
+
+<div class="padLR">
+<p>Can also be used with divs to make a testamonials type slideshow.</p>
+</div>
+
+<div class="ssbox txtCenter">
+<div class="ssani-4 padLR width-80 centerBox card"><div class="ssright"><p class="font-14">One of the best CSS Frameworks around. dffg ght ght </p><p class="font-14">One of the best CSS Frameworks around. dffg ght ght </p><p><i>Spiderman</i></p></div></div>
+<div class="ssani-4 sschild-2 padLR card width-80 txtCenter"><div class="ssright"><p class="font-14">Groovy name!</p><p><i>Superman</i></p></div></div>
+<div class="ssani-4 sschild-3 padLR card width-80 txtCenter"><div class="ssright"><p class="font-14">In a class of it's own.</p><p><i>Wonderwoman</i></p></div></div>
+<div class="ssani-4 sschild-4 padLR card width-80 txtCenter"><div class="ssright"><p class="font-14">Brilliant! Boy Wonder</p><p><i>Batman</i></p></div></div>
+
+</div>
+<div class="spacerV-20"></div>
+<div class="padLR">
+
+<h2 id="modalh">Modals can be useful</h2>
+<p>We use modals instead of pop-up boxes or tooltips. Modals are super easy to see and look great on any device. We use a white background rather than the usual black.</p>
+
+<a class="button bgcol-L3" href="#open-modal">Terms and Conditions</a>
+
+<div id="open-modal" class="overlay">
+<div class="modal">
+<div class="card">
+<header class="cardHeader padLR"><h5>Terms and Conditions</h5></header>
+<div class="cardBody padLR bgcolWhite">
+<p>Lorem ipsum dolor sit amet consectetur adipiscing elit proin eu, mi turpis pharetra facilisi hac vestibulum fermentum risus volutpat, curabitur hendrerit parturient orci posuere cras natoque viverra. Fusce id viverra habitasse interdum mi sed turpis, nullam odio ultricies curabitur netus porttitor metus, faucibus tempor lacinia laoreet sem aenean. Odio hendrerit vel interdum natoque dapibus volutpat augue justo, cursus class eros venenatis blandit primis ante, aptent aliquam imperdiet erat cras convallis massa.</p> <p>Porta taciti penatibus commodo varius facilisi egestas nisl integer phasellus, congue cubilia fringilla turpis conubia massa iaculis urna, facilisis sapien magnis mollis praesent tempus ligula mi. Curabitur consequat porttitor tempor sem purus auctor condimentum ante, praesent tempus per quisque suspendisse porta sollicitudin blandit sociosqu, et ullamcorper semper posuere rutrum curae fusce. Aliquam pharetra aliquet elementum luctus ultricies risus parturient condimentum suspendisse enim nisi rutrum volutpat, tincidunt dictumst habitasse praesent integer natoque odio purus nec etiam ligula. Dictumst nascetur pellentesque phasellus netus fermentum nisl duis laoreet curabitur bibendum, interdum hendrerit sagittis habitasse venenatis tempus felis himenaeos eu, iaculis ridiculus habitant dis non nibh metus penatibus id.</p> <p>Primis lobortis a convallis erat condimentum potenti diam euismod per, nunc duis tempor ridiculus praesent sollicitudin sagittis conubia risus commodo, est fusce vestibulum metus nisl nullam dui aenean. Fames posuere tempor tristique facilisis varius habitasse nec at, sagittis faucibus fringilla mus dignissim penatibus curabitur inceptos, convallis imperdiet malesuada cras aliquet non proin. Netus suspendisse dui elementum condimentum sed non habitasse augue, congue etiam egestas eleifend sagittis ridiculus inceptos sodales, massa gravida dictumst vitae feugiat dis enim.</p> <p>Id netus cursus pellentesque justo metus sociosqu primis fermentum eros cras, morbi vestibulum dictumst hac eu orci placerat porta turpis. Sem non risus himenaeos tortor arcu per nunc odio, molestie sociis porta tristique cum fusce mi, erat quisque morbi dictumst natoque faucibus pretium. Facilisis per sed velit accumsan magnis parturient in, ut eu sodales primis pretium neque, rhoncus urna eget sociis proin lobortis. Dapibus ligula pellentesque ad sollicitudin cras euismod auctor nam quis, vehicula aliquam eu bibendum integer volutpat venenatis odio etiam, lacus conubia potenti purus primis sagittis vestibulum a.</p> <p>Cras turpis leo platea sodales eu risus velit curae faucibus tempor sociosqu et torquent, sapien nulla porttitor nibh varius nostra montes magnis metus suspendisse augue eleifend. Volutpat praesent curabitur tortor facilisis ultrices nullam est libero hac maecenas felis duis, ad accumsan montes blandit mollis taciti orci senectus turpis malesuada penatibus tincidunt, integer a inceptos torquent quam laoreet neque netus quis lacinia etiam. Augue velit ac litora nascetur rutrum mattis donec ultricies tempus varius nisl, condimentum dignissim auctor habitasse conubia lobortis sodales vitae nam sollicitudin bibendum class, et eu ad senectus duis ridiculus erat pulvinar justo metus.</p>
+</div>
+<div class="cardFooter flex-center-all"><a href="#!" title="Close" class="button bgcolGray1">I Agree</a></div>
+    </div>
+</div></div>
+
+<div class="spacerV-20"></div>
+
+<a class="button bgcol-L3" href="#ctmodal" onclick="copyText('https://myrss.com/feed.xml')">RSS Feed - Click to Subscribe</a>
+<div id="ctmodal" class="overlay">
+<div class="modal alertGreen width-50 positionBox"><p>
+<a href="#!" class="close" title="Close Modal">&times;</a>
+The RSS Feed url has been copied to your clipboard. Just paste into your favourite RSS Feed Reader.
+</p></div></div>
+
+<div class="spacerV-20"></div>
+
+<p>What is a Kalamazoo? <a class="tooltip" href="#kzoo">?</a></p>
+<div id="kzoo" class="overlay">
+<div class="modal width-50 alertBlue"><p>
+<a href="#!" class="close" title="Close Modal">&times;</a>
+It's a musical instrument.
+</p></div></div>
+
+<div class="spacerV-20"></div>
+
+<div class="card bgcol-L3 padLR"><p><div include-html="content.html"></div></p></div>
+
+<div class="spacerV-20"></div>
+
+<h2>Tables that scroll</h2>
+
+<div class="tableBox">
+<table>
+<thead><tr><th>Name</th><th>Street Address</th><th>City</th><th>Postcode</th><th>State</th><th>Country Code</th><th>Phone</th><th>Email</th></tr></thead>
+
+<tbody><tr><td>Jeremy Tontabildas</td><td>67 Humble Pie Drive</td><td>Pasadena</td><td>123456</td><td>Twildas</td><td>AU</td><td>1234567123456</td><td>any@anybodyoutthere.com.au</td></tr>
+
+<tr><td>Jeremy Tontabildas</td><td>67 Humble Pie Drive</td><td>Pasadena</td><td>123456</td><td>Twildas</td><td>AU</td><td>1234567123456</td><td>any@anybodyoutthere.com.au</td></tr>
+
+<tr><td>Jeremy Tontabildas</td><td>67 Humble Pie Drive</td><td>Pasadena</td><td>123456</td><td>Twildas</td><td>AU</td><td>1234567123456</td><td>any@anybodyoutthere.com.au</td></tr>
+
+<tr><td>Jeremy Tontabildas</td><td>67 Humble Pie Drive</td><td>Pasadena</td><td>123456</td><td>Twildas</td><td>AU</td><td>1234567123456</td><td>any@anybodyoutthere.com.au</td></tr>
+
+<tr><td>Jeremy Tontabildas</td><td>67 Humble Pie Drive</td><td>Pasadena</td><td>123456</td><td>Twildas</td><td>AU</td><td>1234567123456</td><td>any@anybodyoutthere.com.au</td></tr>
+
+</tbody>
+<tfoot><tr><td>Total:</td><td colspan="6"></td><td>$ 2334455</td></tr>
+</table></div>
+<div class="spacerV-20"></div>
+
+<h3>Tabs that scroll</h3>
+</div>
+
+<div class="scrollBox bgcol-L3" style="padding:10px 0 0 2px;">
+<button onclick="openTab(event,'none')" class="font-14 bgcol-L3" style="margin:0 10px 10px 0;">&times;</button>
+    <button class="scrollItem tab" onclick="openTab(event,'tab1')">Shipping xxxxxxxxxxxxx</button>
+    <button class="scrollItem tab" onclick="openTab(event,'tab2')">Payment xxxxxxxxxx</button>
+    <button class="scrollItem tab" onclick="openTab(event,'tab3')">Returns xxxxxxxxxx</button>
+  </div>
+  
+  <div id="tab1" class="tabContent positionBox hide padLR">
+    <h2>Shipping</h2>
+    <p>Lots of text about our shipping.</p>
+  </div>
+
+  <div id="tab2" class="tabContent positionBox hide padLR">
+    <h2>Payment</h2>
+    <p>You can pay via Credit Card or your PayPal Balance to our PayPal account.</p>
+    
+<!-- PayPal Logo --><table border="0" cellpadding="10" cellspacing="0" align="center"><tr><td align="center"></td></tr><tr><td align="center"><img src="https://www.paypalobjects.com/webstatic/mktg/logo/PP_AcceptanceMarkTray-NoDiscover_243x40.png" alt="Buy now with PayPal" /></td></tr></table><!-- PayPal Logo -->
+  </div>
+
+  <div id="tab3" class="tabContent positionBox hide padLR">
+    <h2>Returns</h2>
+    <p>Contact us if you need to make a return. No returns without authorisation number.</p>
+  </div>
+  <div class="spacerV-5 bgcol-L3"></div>
+
+<div class="padLR">
+
+<div class="spacerV-20"></div>
+
+
+
+
+
+
+<h5>We use native utf-8 icons - why bother adding an icon library when utf-8 has tons.</h5>
+<div class="font-14">
+<span class="i-wait spin"></span> Wait
+<br><span class="i-home"></span> Home
+<br><span class="i-eye"></span> Eye
+<br><span class="i-mobile"></span> Mobile
+<br><span class="i-email"></span> Email
+<br><span class="i-smiley"></span> Smiley
+<br><span class="i-minus"></span> Minus
+<br><span class="i-plus"></span> Plus
+<br><span class="i-menu"></span> Menu
+<br><span class="i-cross"></span> Cross
+<br><span class="i-tick"></span> Tick
+<br><span class="i-lock"></span> Lock
+<br><span class="i-pointright"></span> Point Right
+<br><span class="i-trophy"></span> Trophy
+<br><span class="i-infoperson"></span> Info Person
+<br><span class="i-arrow-dn"></span> Arrow Down
+<br><span class="i-arrow-up"></span> Arrow Up
+<br><span class="i-cart"></span> Shopping Cart
+<br><span class="i-search"></span> Search
+<br><span class="i-card"></span> Credit Card
+<br><span class="i-money"></span> Money
+<br><span class="i-triangle-dn"></span> Triangle Down
+<br><span class="i-triangle-up"></span> Triangle Up
+<br><span class="i-triangle-r"></span> Triangle Right
+<br><span class="i-triangle-l"></span> Triangle Left
+<br><span class="i-blackflag"></span> Black Flag
+<br><span class="i-ok"></span> OK
+<br><span class="i-star"></span> Star
+<br><span class="i-stop"></span> Stop
+<br><span class="i-truck"></span> Truck
+<br><span class="i-page"></span> Page (copy)
+<br><span class="i-clipboard"></span> Clipboard (paste)
+<br><span class="i-scissors"></span> Scissord (cut)
+</div>
+
+<div class="spacerV-20"></div>
+
+
+
+<div class="spacerV-20"></div>
+
+<h1>Alerts</h1>
+<div class="alertGold">
+<p>alertGold: Perfect for  a warning notice.</p>
+</div>
+<div class="spacerV-10"></div>
+<div class="alertRed">
+<p>alertRed: Perfect for an error notice.</p>
+</div>
+<div class="spacerV-10"></div>
+<div class="alertGreen">
+<p>alertGreen: Perfect for a success notice.</p>
+</div>
+<div class="spacerV-10"></div>
+<div class="alertTheme">
+<p>alertTheme: Coloured according to the theme. Great for news or explainers.</p>
+<p>More info</p>
+<p>even more info</p>
+</div>
+<div class="spacerV-10"></div>
+<div class="alertBlue">
+<p>alertBlue: Perfect for information notices.</p>
+</div>
+<div class="spacerV-10"></div>
+<div class="alertBW">
+<p>alertBW: Perfect for Black and White notices.</p>
+</div>
+
+
+<div class="spacerV-20"></div>
+
+</div>
+
+<div id="accdnBox-1" class="accordion">
+<h4 id="accdnCtl-1" onclick="accordion('1', 'bgcol-L3');" class="i-minus i-plus"> Header with hidden content (Accordion)</h4>
+<div id="accdnTxt-1" class="hide padLR">
+<p>a paragraph of info</p>
+<p>More info</p>
+</div></div>
+
+
+<div id="accdnBox-2" class="accordion">
+<h4 id="accdnCtl-2" onclick="accordion('2', 'card');" class="i-arrow-dn"> Learn all about crunch</h4>
+<div id="accdnTxt-2" class="hide">
+<p>crunch is good</p>
+<p>More crunch is better</p>
+</div></div>
+
+
+<div class="spacerV-20"></div>
+
+<div class="grid-1to2">
+<div class="card padLR bgcol-L3">
+<h4>Price Examples per year</h4>
+<p>.com.au and .net.au - $21.49</p>
+<p>.sydney and .melbourne - $79.99</p>
+<p>.com, .net - $24.20</p>
+</div>
+<div class="card padLR bgcol-L2">
+<h4>Links to our NEW Console</h4>
+<p>If you already have an account:<br><a href="#"><button onclick="makeClick()">Login</button></a></p>
+<p>If you want to search for a Domain Name to register:<br><a href="#"><button onclick="makeClick()">Search</button></a></p>
+<p>If you want to transfer a Domain Name to us:<br><a href="#"><button onclick="makeClick()">Transfer</button></a></p>
+</div>
+</div>
+
+<div class="padLR">If you still have Domain Names on our OLD system you can manage them here: <a href="#"><button onclick="makeClick()">Login to Legacy Console</button></a>
+</div>
+
+<div class="padLR">
+<h2>Support FAQs</h2>
+<div class="faq-qst">How do I transfer a Domain Name?</div>
+<div class="faq-ans">Login to your current registrar's control panel. Check that the domain does not have Domain Privacy and is not locked. Copy the Domain Password. Go to your new registrar and click the transfer in link and enter the domain name to be transferred and the domain password. That's it.</div>
+
+<div class="faq-qst">How do I use DNS?</div>
+<div class="faq-ans">Firstly you should only use your Domain Name Registrars DNS as the last option. You should use your Website Hosting DNS as first preference and Email Hosting DNS as second preference. If neither of these provide DNS then you are welcome to use ours. Firstly click the link to manage the Domain Name you want to use DNS. Click the dropdown to park the Domain Name. This gives you the correct Nameservers. Now edit your DNS, you can add A records, MX records and other record types too. You get the correct records from your hosting and email providers. DNS services are self serve.</div>
+
+<h2>Contact Us</h2>
+<p>Fast knowledgeable Support is offered via email.</p>
+<form action="contactus.php" method="post" target="_blank">
+<div class="grid-1to2 card bgcol-L3">
+<div>
+
+<fieldset>
+        <label>Captcha : <span class="font-08">(Refresh page if image is missing.)</span><br>
+       <span class="flex-row"><input class="input captchaTxt width-40" name="uid" type="text" autocomplete="off" required><img class="captchaImg" src="CaptchaImage.gif"></span></label>
+    <label>Your Name<br>
+    <input id="nameField" class="input width-100" name="name" type="text"></label>
+    <label>Your Email<br>
+   <input id="emailField" class="input width-100" name="email" type="email" inputmode="email" required></label>
+   <label>Your Password:<br>
+   <span class="passspan flex-row"><input id="password1" class="width-100" name="password" type="password" value="Hi there!" required><a id="passhide1" onclick="passhide(1)">show</a></span></label>
+   
+   <label><input type="checkbox" required><span> I Agree to Terms</span></label>
+   </fieldset>
+</div>
+<div>
+<fieldset>
+<label>Postage:<br>
+<input type="radio" name="post" value="express" required> Express Delivery
+<br><input type="radio" name="post" value="standard" checked> Standard Delivery
+</label>
+<label>Choose your city:<br>
+  <select class="width-100"><option></option><option>Sydney</option><option>Melbourne</option></select>
+</label>
+<label>Your Message<br>
+<textarea class="width-100" name="message" id="messageField" required></textarea>
+</label>
+<label><input class="btn-dn" onclick="makeClick()" value="Send" type="submit">
+</label>
+</fieldset>
+
+
+</div>
+</div>
+</form>
+
+
+</div>
+
+
+</div>
+<audio id="audio" src="click.mp3" ></audio>
+<script>includeHTML();</script>
+</body>
+
+</html>
